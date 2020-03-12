@@ -21,7 +21,7 @@ import (
 	"barista.run/pango"
 	"barista.run/pango/icons/material"
 	"github.com/glebtv/custom_barista/kbdlayout"
-	"github.com/muka/go-bluetooth/api"
+	//"github.com/muka/go-bluetooth/api"
 )
 
 var spacer = pango.Text("   ").XXSmall()
@@ -175,7 +175,7 @@ func WLAN(i wlan.Info) bar.Output {
 }
 
 // Bluetooth ...
-func Bluetooth(s bar.Sink) {
+/*func Bluetooth(s bar.Sink) {
 	cl := colors.Scheme("degraded")
 	ic := pango.Icon("material-bluetooth")
 
@@ -197,7 +197,7 @@ func Blue(i bluetooth.DeviceInfo) bar.Output {
 	}
 	return outputs.
 		Pango(ic, spacer, dp).Color(cl)
-}
+}*/
 
 // Snd2 ...
 // func Snd2(v volume.Volume) bar.Output {
