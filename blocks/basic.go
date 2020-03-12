@@ -19,7 +19,7 @@ import (
 	"barista.run/modules/wlan"
 	"barista.run/outputs"
 	"barista.run/pango"
-	"barista.run/pango/icons"
+	//"barista.run/pango/icons"
 	"barista.run/pango/icons/material"
 	"github.com/glebtv/custom_barista/kbdlayout"
 	//"github.com/muka/go-bluetooth/api"
