@@ -62,11 +62,11 @@ func Bat(i battery.Info) bar.Output {
 	if i.Status == battery.Disconnected || i.Status == battery.Unknown {
 		return nil
 	}
-	iconName := "material-battery-std"
+	iconName := "battery"
 	icon := pango.Icon(iconName).Color(colors.Scheme("dim-icon"))
 	if i.Status == battery.Charging {
 		disp = pango.Textf("Bat: %d%%", i.RemainingPct())
-		iconName = "material-battery-charging-full"
+		iconName += "-charing"
 		icon = pango.Icon(iconName)
 	}
 	out := outputs.Pango(icon, disp)
