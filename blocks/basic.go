@@ -175,7 +175,7 @@ func WLAN(i wlan.Info) bar.Output {
 }
 
 // Bluetooth ...
-/*func Bluetooth(s bar.Sink) {
+func Bluetooth(s bar.Sink) {
 	cl := colors.Scheme("degraded")
 	ic := pango.Icon("material-bluetooth")
 
@@ -187,7 +187,7 @@ func WLAN(i wlan.Info) bar.Output {
 }
 
 // Blue ...
-func Blue(i bluetooth.DeviceInfo) bar.Output {
+/*func Blue(i bluetooth.DeviceInfo) bar.Output {
 	dp := pango.Textf(fmt.Sprintf("%s", i.Alias))
 	cl := colors.Scheme("good")
 	ic := pango.Icon("material-bluetooth-connected")
