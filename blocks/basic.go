@@ -13,7 +13,7 @@ import (
 	"barista.run/base/watchers/netlink"
 	"barista.run/colors"
 	"barista.run/modules/battery"
-	//"barista.run/modules/bluetooth"
+	"barista.run/modules/bluetooth"
 	"barista.run/modules/netinfo"
 	"barista.run/modules/volume"
 	"barista.run/modules/wlan"
