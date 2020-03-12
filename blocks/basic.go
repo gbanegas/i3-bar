@@ -19,6 +19,7 @@ import (
 	"barista.run/modules/wlan"
 	"barista.run/outputs"
 	"barista.run/pango"
+	"barista.run/pango/icon"
 	"barista.run/pango/icons/material"
 	"github.com/glebtv/custom_barista/kbdlayout"
 	//"github.com/muka/go-bluetooth/api"
@@ -57,7 +58,7 @@ func Clock(now time.Time) bar.Output {
 
 // Bat ...
 func Bat(i battery.Info) bar.Output {
-	disp := pango.Textf("Bat: %d%% (%2.1f Watt)", i.RemainingPct(), i.Power)
+	disp := pango.Textf("Battery: %d%% (%2.1f Watt)", i.RemainingPct(), i.Power)
 	if i.Status == battery.Disconnected || i.Status == battery.Unknown {
 		return nil
 	}
@@ -99,7 +100,7 @@ func Snd(v volume.Volume) bar.Output {
 	}
 
 	return outputs.
-		Pango(ic, spacer, pango.Textf("%2d%%", pct)).Color(cl)
+	Pango(ic, spacer, pango.Textf("Vol: %2d%%", pct)).Color(cl)
 }
 
 // Brightness ...
